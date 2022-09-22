@@ -10,6 +10,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
 		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/index.js"></script>
 	</head>
 	<body>
 		<header>	
@@ -24,14 +25,84 @@
 			</div>	
 		</header>
 		<section>
-			<article id="system-article">
+			<article id="system-article" class="flex">
 				<div id="system">
-					<p>물관리 시스템</p>
-					<p>Water Management System</p>
-					<div id="system-img">
-						<img src="images/system_img1.jpg" alt="systemimg1" />
-						<img src="images/system_img2.jpg" alt="systemimg2" />
-						<img src="images/system_img3.jpg" alt="systemimg3" />
+					<div id="system-div1" class="mt50">
+						<p id="system-head">물관리 시스템</p>
+					</div>
+					<div id="system-div2" class="mt30 flex">
+						<p id="system-ehead">Water Management System</p>
+					</div>			
+					<div id="system-imgdiv">
+						<div class="system-imgdiv" id="system-imgdiv1">
+							<img src="images/system_img1.jpg" alt="systemimg1" id="system-img1" class="system-img"/>
+							<div class="system-img-hover" id="system-img-hover1">
+								<p>재해관리</p>
+								<img src="images/addcircle.png" alt="addcircle" />
+							</div>
+						</div>
+						<div class="system-imgdiv" id="system-imgdiv2">
+							<img src="images/system_img2.jpg" alt="systemimg2" id="system-img2" class="system-img"/>
+							<div class="system-img-hover" id="system-img-hover2">
+								<p>재해관리</p>
+								<img src="images/addcircle.png" alt="addcircle" />
+							</div>
+						</div>
+						<div class="system-imgdiv" id="system-imgdiv3">
+							<img src="images/system_img3.jpg" alt="systemimg3" id="system-img3" class="system-img"/>
+							<div class="system-img-hover" id="system-img-hover3">
+								<p>재해관리</p>
+								<img src="images/addcircle.png" alt="addcircle" />
+							</div>	
+						</div>
+					</div>
+				</div>
+			</article>
+			<article id="product-article" class="flex">
+				<div id="product">
+					<div id="product-div1" class="mt50">
+						<p id="product-head">생산제품</p>
+					</div>
+					<div id="product-div2" class="mt30">
+						<p id="product-phrases">2015년 신제품 지능형 <span>텔레모스 시스템!</span></p>
+					</div>
+					<div id="product-imgdiv" class="mt30">
+						<img src="images/product.png" alt="product" />
+					</div>
+					<div id="product-popupdiv">
+						<div id="product-popup">
+							<img src="images/product.png" alt="product" id="product-popup-img" />
+							<table id="product-popup-table">
+								<tr>
+									<td>임시</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>임시</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>임시</td>
+									<td>123</td>
+								</tr>
+							</table>
+							<img src="images/close.png" alt="close" id="product-popup-close" />
+						</div>
+					</div>
+					<div id="product-buttondiv" class="mt30">
+						<a href="#" id="product-button" onclick="return false">자세히보기</a>
+					</div>
+				</div>
+			</article>
+			<article id="company-article">
+				<img src="images/company.png" alt="company" id="company-img" />
+				<div id="company">
+					<div id="company-div">
+						<p id="company-head">(주) 이미그룹</p>
+						<p id="company-phrases">
+						사람과 자연 모두가 행복한 세상, <br>
+						<span class="fw500">이미가 만들어 가고자 하는 미래입니다.</span> 
+						</p>
 					</div>
 				</div>
 			</article>

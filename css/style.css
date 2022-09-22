@@ -2,7 +2,7 @@
 @import "./reset.css";
 
 :root {
-	--main-bg-color: ; 
+	--main-bg-color: #1e598c; 
 }
 
 html { 
@@ -12,9 +12,23 @@ html {
 
 body {
 	font-family: "Maven Pro", "Noto Sans KR", sans-serif;
-	color: #222;
+	color: #666;
+	font-weight: 400px;
 	line-height: 1.5;
-	letter-spacing: -1px;	
+	letter-spacing: 0px;	
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+}
+
+.mt30 {
+	margin-top: 30px;
+}
+
+.mt50 {
+	margin-top: 50px;
 }
 
 /* header */
@@ -24,8 +38,8 @@ header{
 	justify-content: center;
 	background-image: url(../images/visual_bg.jpg);
 	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #header {
@@ -48,18 +62,18 @@ header{
 
 #header-bottom {
 	display: flex;
-    justify-content: center;
-    height: 700px;
-    align-items: center;
+	justify-content: center;
+	height: 700px;
+	align-items: center;
 }
 
+/* system */
+
 #system-article {
-	display: flex;
-	justify-content: center;
 	background-image: url(../images/system_bg.jpg);
 	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #system {
@@ -67,24 +81,161 @@ header{
 	height: 600px;
 }
 
-#system p:first-child {
-	width: 200px;
-	margin-top: 60px;	
+
+#system-head{
 	font-size: 30px;
 	font-weight: 500;
-	color: #1e598c;
+	color: var(--main-bg-color);
 }
 
-#system p:nth-child(2) {
+#system-ehead{
 	width: 280px;
-	margin-top: 10px;
 	font-size: 20px;
 	font-weight: 500;
 	color: #fff;
-	background-color: #1e598c;
+	background-color: var(--main-bg-color);
 }
 
-#system-img {
+#system-imgdiv {
+	height: 445px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.system-imgdiv {
+	height: 300px;
+}
+
+.system-img {
+	width: 300px;
+    height: 300px;
+    border-radius: 70%;
+    transition: all 0.5s;
+}
+
+.system-img-hover {
+	display: none;
+	position: relative;
+	top: -191px;
+	transition: all 0.5s;
+	color: #fff;
+	font-size: 18px;
+}
+
+/* product */
+
+#product {
+	width: 1000px;
+    height: 750px;
+}
+
+#product-head {
+	font-size: 30px;
+	font-weight: 500;
+	color: var(--main-bg-color);
+}
+
+#product-phrases {
+	font-size: 36px;
+	font-weight: 700;
+	color: #000;
+}
+
+#product-phrases span {
+	color: #ed480e;
+}
+
+
+#product-popupdiv {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,.3); 
+	z-index:9999;	
+}
+
+#product-popup {
+	background-color: #fff; 
+	display: flex;
+	justify-content: space-evenly;
+	position: absolute;
+    width: 1000px;
+    height: 442px;
+    left: 50%;
+    top: 50%;
+    margin-left: -500px;
+    margin-top: -221px;
+}
+
+#product-popup-img {
+	height: 442px;
+}
+
+#product-popup-table {
+	height: 180px;
+    width: 250px;
+    margin: auto 0;
+}
+
+#product-popup-close {
+	margin-top: 20px;
+	height: 50px;
+}
+
+#product-button {
+	padding: 10px 25px;
+	color: #000;
+	font-size: 16px;
+	border: 1px solid #000;
+	border-radius: 30px;
+	transition: all 0.3s;
+}
+
+#product-button:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+/* company */
+
+#company-article {
+	height: 382px;
+	background-image: url(../images/company_bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#company-img {
+	position: absolute;
+}
+
+#company {
+	display: flex;
+	align-items: center;
+	width: 1000px;
+    height: 382px;
+    margin: 0 auto;
+}
+
+#company-head {
+	text-align: left;
+	font-size: 20px;
+	font-weight: 500;
+	color: #193f5c;	
+}
+
+#company-phrases {
+	text-align: left;
+	font-size: 30px;
+	font-weight: 500;
+	color: #193f5c;	
+}
+
+.fw500 {
+	font-weight: 300;
 }
