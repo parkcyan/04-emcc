@@ -13,10 +13,13 @@
 		<script src="js/index.js"></script>
 	</head>
 	<body>
+		<div id="sidebar">
+			<p>테스트입니다</p>
+		</div>
 		<header>	
 			<div id="header">
 				<div id="header-top">
-					<img src="images/logo.png" alt="logo" id="logo"/>
+					<img src="images/logo.png" alt="logo" id="logo" name="top"/>
 					<img src="images/btn_menu.png" alt="menu" id="menu"/>	
 				</div>
 				<div id="header-bottom">
@@ -67,12 +70,42 @@
 						<p id="product-phrases">2015년 신제품 지능형 <span>텔레모스 시스템!</span></p>
 					</div>
 					<div id="product-imgdiv" class="mt30">
-						<img src="images/product.png" alt="product" />
+						<img src="images/arrowback.png" alt="arrowback" id="product-back"/>
+						<div id="product-carousel">
+							<div class="product-carousel-div flex">
+								<img src="images/product.png" alt="product" class="product-carousel-img"/>
+								<div class="product-carousel-divp">
+									<p>책임자 : 박정원</p>
+									<p>기능</p>
+									<p>컬러</p>
+									<p>특징</p>
+								</div>
+							</div>
+							<div class="product-carousel-div flex">
+								<img src="images/product2.png" alt="product2" class="product-carousel-img"/>
+								<div class="product-carousel-divp">
+									<p>책임자 : 박정원</p>
+									<p>기능</p>
+									<p>컬러</p>
+									<p>특징</p>
+								</div>
+							</div>
+							<div class="product-carousel-div flex">
+								<img src="images/product3.jpg" alt="product3" class="product-carousel-img"/>
+								<div class="product-carousel-divp">
+									<p>책임자 : 박정원</p>
+									<p>기능</p>
+									<p>컬러</p>
+									<p>특징</p>
+								</div>
+							</div>
+						</div>
+						<img src="images/arrowforward.png" alt="arrowforward" id="product-forward"/>
 					</div>
 					<div id="product-popupdiv">
-						<div id="product-popup">
-							<img src="images/product.png" alt="product" id="product-popup-img" />
-							<table id="product-popup-table">
+						<div id="product-popup1" class="product-popup">
+							<img src="images/product.png" alt="product" class="product-popup-img" />
+							<table class="product-popup-table">
 								<tr>
 									<td>임시</td>
 									<td>123</td>
@@ -86,7 +119,43 @@
 									<td>123</td>
 								</tr>
 							</table>
-							<img src="images/close.png" alt="close" id="product-popup-close" />
+							<img src="images/close.png" alt="close" class="product-popup-close" />
+						</div>
+						<div id="product-popup2" class="product-popup">
+							<img src="images/product2.png" alt="product" class="product-popup-img" />
+							<table class="product-popup-table">
+								<tr>
+									<td>임시</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>임시</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>임시</td>
+									<td>123</td>
+								</tr>
+							</table>
+							<img src="images/close.png" alt="close" class="product-popup-close" />
+						</div>
+						<div id="product-popup3" class="product-popup">
+							<img src="images/product3.jpg" alt="product" class="product-popup-img" />
+							<table class="product-popup-table">
+								<tr>
+									<td>임시</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>임시</td>
+									<td>123</td>
+								</tr>
+								<tr>
+									<td>임시</td>
+									<td>123</td>
+								</tr>
+							</table>
+							<img src="images/close.png" alt="close" class="product-popup-close" />
 						</div>
 					</div>
 					<div id="product-buttondiv" class="mt30">
@@ -106,8 +175,29 @@
 					</div>
 				</div>
 			</article>
+			<article id="call-article" class="flex">
+				<div id="call">
+					<div id="call-div">
+						<img src="images/icon_call.png" alt="icon-call" />
+						<a href="tel:0626700300">062) 670-0300</a>
+					</div>
+					<a href="#top"><img src="images/btn_top.gif" alt="top" id="call-btn"/></a>
+				</div>
+			</article>
 		</section>
-		<footer>
+		<footer class="flex">
+			<div class="footer">
+				<div id="footer-img" class="mt20">
+					<img src="images/footer_logo.png" alt="footer-logo" />
+				</div>
+				<div id="footer-info" class="mt20">
+					<p>(주)이미그룹 대표이사:이미 본사:광주광역시 서구 쌍촌동 한울직업전문학교 4층 401호 연구소:광주광역시 서구 봉촌동 한울직업전문학교 4층 401호 왼쪽 3번째줄 창가 2번째 자리</p>
+					<p>고객센터:062-1234-5678 팩스:062-1234-5679 이메일:already@hanmail.ney</p>
+				</div>
+				<div id="footer-copyright" class="mt20">
+					<p>COPYRIGHT(C) 2022 DAEYOUNG CO LTD. ALL RIGHT RESERVED.</p>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
