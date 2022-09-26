@@ -9,12 +9,24 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css" />
-		<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-		<script src="js/index.js"></script>
 	</head>
 	<body>
 		<div id="sidebar">
-			<p>테스트입니다</p>
+			<img src="images/arrowrightcircle_negative.png" alt="arrowrightcircle" id="sidebar-close"/>
+			<div id="sidebar-div1" class="ml20">
+				<p>EMCC</p>
+			</div>
+			<div id="sidebar-div2" class="ml20">
+				<p>(주)이미그룹</p>
+				<a href="#">HOME</a>
+				<a href="#">PRODUCT</a>
+				<a href="#">CUSTOMER</a>
+				<a href="#">CONTACT</a>
+				<a href="#">ABOUT</a>
+			</div>
+			<div id="sidebar-div3" class="ml20">
+				<p>ID / PW 찾기 | 고객센터</p>
+			</div>
 		</div>
 		<header>	
 			<div id="header">
@@ -38,21 +50,21 @@
 					</div>			
 					<div id="system-imgdiv">
 						<div class="system-imgdiv" id="system-imgdiv1">
-							<img src="images/system_img1.jpg" alt="systemimg1" id="system-img1" class="system-img"/>
+							<img src="images/system_img1.jpg" alt="systemimg1" id="system-img1" class="system-img" loading="lazy"/>
 							<div class="system-img-hover" id="system-img-hover1">
 								<p>재해관리</p>
 								<img src="images/addcircle.png" alt="addcircle" />
 							</div>
 						</div>
 						<div class="system-imgdiv" id="system-imgdiv2">
-							<img src="images/system_img2.jpg" alt="systemimg2" id="system-img2" class="system-img"/>
+							<img src="images/system_img2.jpg" alt="systemimg2" id="system-img2" class="system-img" loading="lazy"/>
 							<div class="system-img-hover" id="system-img-hover2">
 								<p>재해관리</p>
 								<img src="images/addcircle.png" alt="addcircle" />
 							</div>
 						</div>
 						<div class="system-imgdiv" id="system-imgdiv3">
-							<img src="images/system_img3.jpg" alt="systemimg3" id="system-img3" class="system-img"/>
+							<img src="images/system_img3.jpg" alt="systemimg3" id="system-img3" class="system-img" loading="lazy"/>
 							<div class="system-img-hover" id="system-img-hover3">
 								<p>재해관리</p>
 								<img src="images/addcircle.png" alt="addcircle" />
@@ -73,7 +85,7 @@
 						<img src="images/arrowback.png" alt="arrowback" id="product-back"/>
 						<div id="product-carousel">
 							<div class="product-carousel-div flex">
-								<img src="images/product.png" alt="product" class="product-carousel-img"/>
+								<img src="images/product.png" alt="product" class="product-carousel-img" loading="lazy"/>
 								<div class="product-carousel-divp">
 									<p>책임자 : 박정원</p>
 									<p>기능</p>
@@ -82,7 +94,7 @@
 								</div>
 							</div>
 							<div class="product-carousel-div flex">
-								<img src="images/product2.png" alt="product2" class="product-carousel-img"/>
+								<img src="images/product2.png" alt="product2" class="product-carousel-img" loading="lazy"/>
 								<div class="product-carousel-divp">
 									<p>책임자 : 박정원</p>
 									<p>기능</p>
@@ -91,7 +103,7 @@
 								</div>
 							</div>
 							<div class="product-carousel-div flex">
-								<img src="images/product3.jpg" alt="product3" class="product-carousel-img"/>
+								<img src="images/product3.jpg" alt="product3" class="product-carousel-img" loading="lazy"/>
 								<div class="product-carousel-divp">
 									<p>책임자 : 박정원</p>
 									<p>기능</p>
@@ -199,5 +211,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="js/index.js"></script>
 	</body>
 </html>

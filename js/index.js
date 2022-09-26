@@ -1,11 +1,11 @@
 /**
  * 
  */
-
-window.onload = function() {
+window.addEventListener("DOMContentLoaded", function() {
 	
 	const menu = document.getElementById("menu");
 	const sidebar = document.getElementById("sidebar");
+	const sidebarClose = document.getElementById("sidebar-close");
 	
 	const systemImgHover1 = document.getElementById("system-img-hover1");
 	const systemImgHover2 = document.getElementById("system-img-hover2");
@@ -24,8 +24,22 @@ window.onload = function() {
 	const productPopup = document.querySelectorAll(".product-popup");
 	const productClose = document.querySelectorAll(".product-popup-close");
 	
+	let sidebarOpen = false;
+	
 	menu.addEventListener("click", function() {
-		sidebar.style.transform = "translateX(-100%)";
+		if (sidebarOpen) {
+			sidebarOpen = false;
+			sidebar.style.transform = "translateX(0%)";
+		} else {
+			sidebarOpen = true;
+			sidebar.style.transform = "translateX(-100%)";
+		}
+		
+	})
+	
+	sidebarClose.addEventListener("click", function() {
+		sidebarOpen = false;
+		sidebar.style.transform = "translateX(0%)";
 	})
 	
 	const systemImg1Out = function() {
@@ -96,8 +110,7 @@ window.onload = function() {
 			productPopupDiv.style.display = "none";
 			productPopup[productIndex].style.display = "none";
 		})
-	});
-	
-}
-
+	})
+		
+});
 	
