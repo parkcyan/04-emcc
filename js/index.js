@@ -28,9 +28,11 @@ window.addEventListener("DOMContentLoaded", function() {
 	
 	menu.addEventListener("click", function() {
 		if (sidebarOpen) {
+			sidebarClose.src = "images/arrowleftcircle.png";
 			sidebarOpen = false;
 			sidebar.style.transform = "translateX(0%)";
 		} else {
+			sidebarClose.src = "images/arrowrightcircle.png";
 			sidebarOpen = true;
 			sidebar.style.transform = "translateX(-100%)";
 		}
@@ -38,8 +40,15 @@ window.addEventListener("DOMContentLoaded", function() {
 	})
 	
 	sidebarClose.addEventListener("click", function() {
-		sidebarOpen = false;
-		sidebar.style.transform = "translateX(0%)";
+		if (sidebarOpen) {
+			sidebarClose.src = "images/arrowleftcircle.png";
+			sidebarOpen = false;
+			sidebar.style.transform = "translateX(0%)";
+		} else {
+			sidebarClose.src = "images/arrowrightcircle.png";
+			sidebarOpen = true;
+			sidebar.style.transform = "translateX(-100%)";
+		}
 	})
 	
 	const systemImg1Out = function() {
